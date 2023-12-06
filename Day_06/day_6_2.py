@@ -10,7 +10,7 @@ distances = re.findall('[0-9]+', data[1])
 times = int(''.join(time for time in times))
 distances = int(''.join(distance for distance in distances))
 
-coeffs = [-1, times, -distances]
+coeffs = [-1, times, -distances] #based on derived quadratic formula for distance over charge time
 roots = np.roots(coeffs)
 roots[1] = np.ceil(roots[1])
 roots[0] = np.floor(roots[0])
