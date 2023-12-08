@@ -1,5 +1,4 @@
 #Advent of Code 2023, solution by Jerzy Piwkowski, https://github.com/rureq
-from enum import Enum
 input = open("input.txt", "r")
 data = input.readlines()
 
